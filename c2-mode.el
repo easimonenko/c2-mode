@@ -154,10 +154,14 @@
 (c-lang-defconst c-opt-type-suffix-key
   c2 (concat "\\(\\[" (c-lang-const c-simple-ws) "*\\]\\|\\*\\)"))
 
-(defconst c2-font-lock-keywords-1 (c-lang-const c-matchers-1 c2) nil)
-(defconst c2-font-lock-keywords-2 (c-lang-const c-matchers-2 c2) nil)
-(defconst c2-font-lock-keywords-3 (c-lang-const c-matchers-3 c2) nil)
-(defvar c2-font-lock-keywords c2-font-lock-keywords-3 bil)
+(defconst c2-font-lock-keywords-1 (c-lang-const c-matchers-1 c2)
+  "Minimal highlighting for C2 mode.")
+(defconst c2-font-lock-keywords-2 (c-lang-const c-matchers-2 c2)
+  "Fast normal highlighting for C2 mode.")
+(defconst c2-font-lock-keywords-3 (c-lang-const c-matchers-3 c2)
+  "Accurate normal highlighting for C2 mode.")
+(defvar c2-font-lock-keywords c2-font-lock-keywords-3
+  "Default expressions to highlight in C2 mode.")
 
 (defvar c2-mode-map () "Keymap for C2 mode buffers.")
 (if c2-mode-map nil (setq c2-mode-map (c-make-inherited-keymap)))
