@@ -1,5 +1,7 @@
 # C2 Mode
 
+[![MELPA](https://melpa.org/packages/c2-mode-badge.svg)](https://melpa.org/#/c2-mode)
+
 _c2-mode_ -- major mode for editing code written
 in the [C2 Programming Language](http://c2lang.org/).
 
